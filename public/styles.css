@@ -8,11 +8,14 @@ html, body
     padding: 0;
     margin: 0;
     background-color: rgb(31, 31, 34);
-    /* background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, rgb(31, 31, 34) 100px ), 
-    repeating-linear-gradient( rgb(30, 30, 33), rgb(30, 30, 33) ); */
 }
 
 /* Navigation Bar */
+
+#navbar a
+{
+    text-decoration: none;
+}
 
 #navbar
 {
