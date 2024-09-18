@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <!-- <script src="script.js"></script> -->
         <title>Ryan's Portfolio</title>
     </head>
     <body>
@@ -15,37 +16,96 @@
         <div id="info-section">
             <h1 id="info-title">Projects</h1>
             <p id="info-text">Listed below are some projects that I've developed in my spare time.</p>
-            <p id="info-text">Clicking on any will reveal more information.</p>
+            <p id="info-text">Click the Github links to view the source code.</p>
         </div>
         <div id="project-list">
-            <div class="project-entry project-entry-odd">
-                <div class="project-title">Crazy Engine</div>
-                <div class="project-contents">
-                    <div class="project-text">
-                        Crazy Engine is a 2D game engine 
-                        CrazyEngine is a 2D game engine capable of Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur, officiis recusandae similique ullam impedit aut quaerat iure fuga perspiciatis. Ab optio officiis fugit illo tenetur sapiente quo expedita dolorum nisi vitae unde cumque quaerat nesciunt ratione quasi molestiae qui, debitis, dolore quia, facere nemo. Laboriosam harum quibusdam inventore ex sapiente voluptatibus ab non sit ducimus? Ipsa officiis ea dicta, dignissimos labore consequuntur est cumque dolore repellat culpa, nobis, iure molestias! Magni perferendis soluta praesentium ipsam ducimus sit. Expedita, consequuntur adipisci. In harum, quidem corrupti at neque maxime, dolorum odit vel quam ratione ea aperiam id fugit, asperiores molestiae earum!
+
+            <div class="project-entry">
+                <div class="project-text">
+                    <div class="project-header">
+                        <div class="project-title">Password Manager</div>
+                        <a class="github-link" href="https://github.com/ryanduncan2/PasswordManager">
+                            <div class="github-button">
+                                <img src="assets/github.png" />
+                                <p>Github</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="project-image"></div>
+                    <p>Password Manager is an application that can generate, encrypt, and securely store credentials for accounts.</p>
+                    <ul class="text-list">
+                        <li><span>Written in C++ with <a class="text-link" href="https://github.com/openssl/openssl">OpenSSL</a> and <a class="text-link" href="https://github.com/wxWidgets/wxWidgets">wxWidgets</a>.</span></li>
+                        <li><span>Features a customisable and cryptographically secure password generator.</span></li>
+                        <li><span>Encrypts all data with AES-256 (CBC mode) and leaves no trace of plaintext data in memory after execution.</span></li>
+                        <li><span>Provides an efficient search function and user-friendly UI, making it simple to access account information.</span></li>
+                    </ul>
                 </div>
+                <img class="project-image" src="assets/icon.png" />
             </div>
-            <div class="project-entry project-entry-even">
-                <div class="project-title">Password Manager</div>
-                <div class="project-contents">
-                    <div class="project-image"></div>
-                    <div class="project-text">
-                        CrazyEngine is a 2D game engine capable of Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur, officiis recusandae similique ullam impedit aut quaerat iure fuga perspiciatis. Ab optio officiis fugit illo tenetur sapiente quo expedita dolorum nisi vitae unde cumque quaerat nesciunt ratione quasi molestiae qui, debitis, dolore quia, facere nemo. Laboriosam harum quibusdam inventore ex sapiente voluptatibus ab non sit ducimus? Ipsa officiis ea dicta, dignissimos labore consequuntur est cumque dolore repellat culpa, nobis, iure molestias! Magni perferendis soluta praesentium ipsam ducimus sit. Expedita, consequuntur adipisci. In harum, quidem corrupti at neque maxime, dolorum odit vel quam ratione ea aperiam id fugit, asperiores molestiae earum!
+
+            <div class="project-entry">
+                <div class="project-text">
+                    <div class="project-header">
+                        <div class="project-title">Crazy Engine</div>
+                        <a class="github-link" href="https://github.com/ryanduncan2/CrazyEngine">
+                            <div class="github-button">
+                                <img src="assets/github.png" />
+                                <p>Github</p>
+                            </div>
+                        </a>
                     </div>
+                    <p>Crazy Engine is a 2D game engine capable of rendering both graphics and sound.</p>
+                    <ul class="text-list">
+                        <li><span>Written in C++ with <a class="text-link" href="https://www.opengl.org/">OpenGL</a>, <a class="text-link" href="https://glad.dav1d.de/">Glad</a>, and the Win32 API.</span></li>
+                        <li><span>Provides an efficient batch renderer with functions for rendering colours, textures, and strings with GLSL shaders (default or user-provided).</span></li>
+                        <li><span>Uses the Win32 <a class="text-link" href="https://learn.microsoft.com/en-us/windows/win32/coreaudio/wasapi">WASAPI</a> audio framework to render sound on Windows.</span></li>
+                        <li><span>Features a custom-built mathematics library.</span></li>
+                    </ul>
                 </div>
+                <img class="project-image" src="assets/icon.png" />
             </div>
-            <div class="project-entry project-entry-odd">
-                <div class="project-title">Math Script</div>
-                <div class="project-contents">
-                    <div class="project-text">
-                        CrazyEngine is a 2D game engine capable of Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur, officiis recusandae similique ullam impedit aut quaerat iure fuga perspiciatis. Ab optio officiis fugit illo tenetur sapiente quo expedita dolorum nisi vitae unde cumque quaerat nesciunt ratione quasi molestiae qui, debitis, dolore quia, facere nemo. Laboriosam harum quibusdam inventore ex sapiente voluptatibus ab non sit ducimus? Ipsa officiis ea dicta, dignissimos labore consequuntur est cumque dolore repellat culpa, nobis, iure molestias! Magni perferendis soluta praesentium ipsam ducimus sit. Expedita, consequuntur adipisci. In harum, quidem corrupti at neque maxime, dolorum odit vel quam ratione ea aperiam id fugit, asperiores molestiae earum!
+
+            <div class="project-entry">
+                <div class="project-text">
+                    <div class="project-header">
+                        <div class="project-title">Math Script</div>
+                        <a class="github-link" href="https://github.com/ryanduncan2/CrazyEngine">
+                            <div class="github-button" id="math-script-button">
+                                <img src="assets/github.png" />
+                                <p>Github</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="project-image"></div>
+                    <p>Math Script is a tool for generating properly-typesetted mathematical formulae from an input script.</p>
+                    <ul class="text-list">
+                        <li><span>Written in C++ with <a class="text-link" href="http://freetype.org/">Freetype</a>.</span></li>
+                        <li><span>Uses a custom scripting language to generate bitmaps of inputted formulae.</span></li>
+                        <li><span>Supports inline operations, fractions, integrals, summations, text, and any ASCII symbol.</span></li>
+                    </ul>
                 </div>
+                <img class="project-image" src="assets/icon.png" />
             </div>
+
+            <div class="project-entry">
+                <div class="project-text">
+                    <div class="project-header">
+                        <div class="project-title">Crazy Engine GUI</div>
+                        <a class="github-link" href="https://github.com/ryanduncan2/CrazyEngine">
+                            <div class="github-button" id="crazy-engine-gui-button">
+                                <img src="assets/github.png" />
+                                <p>Github</p>
+                            </div>
+                        </a>
+                    </div>
+                    <p>Crazy Engine GUI is an extension of Crazy Engine that adds support for GUI development.</p>
+                    <ul class="text-list">
+                        <li><span>Written in C++ on top of Crazy Engine.</span></li>
+                        <li><span>Provides an array of UI primitives, including buttons, checkboxes, images, and labels.</span></li>
+                        <li><span>Supports a scaling GUI with relative translations and sizes.</span></li>
+                    </ul>
+                </div>
+                <img class="project-image" src="assets/icon.png" />
+            </div>
+
         </div>
     </body>
 </html>
