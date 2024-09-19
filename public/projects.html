@@ -10,17 +10,16 @@
     <body>
         <div id="navbar">
             <a href="index.html"><div class="navbar-element">Home</div></a>
-            <a href="blog.html"></a><div class="navbar-element">Blog</div></a>
             <a href="projects.html"><div class="navbar-element">Projects</div></a>
         </div>
         <div id="info-section">
             <h1 id="info-title">Projects</h1>
             <p id="info-text">Listed below are some projects that I've developed in my spare time.</p>
-            <p id="info-text">Click the Github links to view the source code.</p>
+            <p id="info-text">Click the <a class="text-link" href="https://github.com/ryanduncan2">Github</a> links to view the source code.</p>
         </div>
         <div id="project-list">
 
-            <div class="project-entry">
+            <div class="project-entry project-entry-odd">
                 <div class="project-text">
                     <div class="project-header">
                         <div class="project-title">Password Manager</div>
@@ -42,7 +41,7 @@
                 <img class="project-image" src="assets/icon.png" />
             </div>
 
-            <div class="project-entry">
+            <div class="project-entry project-entry-even">
                 <div class="project-text">
                     <div class="project-header">
                         <div class="project-title">Crazy Engine</div>
@@ -61,10 +60,12 @@
                         <li><span>Features a custom-built mathematics library.</span></li>
                     </ul>
                 </div>
-                <img class="project-image" src="assets/icon.png" />
+                <video class="project-image" style="max-width: 35%" autoplay muted onended="this.play()">
+                    <source src="assets/crazyengine.mp4" type="video/mp4">
+                </video>
             </div>
 
-            <div class="project-entry">
+            <div class="project-entry project-entry-odd">
                 <div class="project-text">
                     <div class="project-header">
                         <div class="project-title">Math Script</div>
@@ -80,12 +81,13 @@
                         <li><span>Written in C++ with <a class="text-link" href="http://freetype.org/">Freetype</a>.</span></li>
                         <li><span>Uses a custom scripting language to generate bitmaps of inputted formulae.</span></li>
                         <li><span>Supports inline operations, fractions, integrals, summations, text, and any ASCII symbol.</span></li>
+                        <li><span>Can evaluate multivariate functions involving arithmetical, fractional, and trigonometric operators with given input parameters.</span></li>
                     </ul>
                 </div>
-                <img class="project-image" src="assets/icon.png" />
+                <img class="project-image" src="assets/mathscript.png" style="max-width: 30%; width: auto; height: auto;"/>
             </div>
 
-            <div class="project-entry">
+            <div class="project-entry project-entry-even">
                 <div class="project-text">
                     <div class="project-header">
                         <div class="project-title">Crazy Engine GUI</div>
@@ -103,7 +105,7 @@
                         <li><span>Supports a scaling GUI with relative translations and sizes.</span></li>
                     </ul>
                 </div>
-                <img class="project-image" src="assets/icon.png" />
+                <img class="project-image" style="max-width: 17%; width: auto; height: auto" src="assets/crazyengine-gui.png" />
             </div>
 
         </div>
