@@ -55,6 +55,8 @@ html, body
 
 /* Projects Page */
 
+
+
 #info-section
 {
     display: flex;
@@ -88,7 +90,6 @@ html, body
     align-items: center;
     padding-bottom: 100px;
     background-color: rgb(23, 23, 26);
-    /* background-image: linear-gradient(rgb(27, 27, 30), rgb(18, 18, 19)); */
     box-shadow: 0 2px 15px 3px #000000;
 }
 
@@ -105,6 +106,7 @@ html, body
 .project-entry-even
 {
     flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
 .project-entry-even .project-image
@@ -154,19 +156,12 @@ html, body
 
 .project-image
 {
-    height: 200px;
     margin: 0 0 0 40px;
     -webkit-filter: drop-shadow(5px 5px 5px #000000);
     filter: drop-shadow(5px 5px 5px #000000);
+    max-width: 300px;
+    max-height: 200px;
 }
-
-/* .github-link
-{
-    background-color: black;
-    border-radius: 5px;
-    padding: 5px 20px;
-    margin-left: 25px;
-} */
 
 .github-button
 {
@@ -210,4 +205,45 @@ html, body
 .github-link
 {
     text-decoration: none;
+}
+
+@media screen and (max-width: 700px)
+{
+    #info-text
+    {
+        width: 95%;
+    }
+
+    .project-entry
+    {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .project-text
+    {
+        width: 85%;
+    }
+
+    .project-image
+    {
+        max-width: 85%;
+        max-height: 200px;
+        margin: 20px 0;
+    }
+
+    .project-entry-even .project-image
+    {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 701px)
+{
+    .project-entry
+    {
+        width: 75%;
+    }
 }
