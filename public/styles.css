@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: LatoBold;
     src: url("assets/Lato-Bold.ttf");
-}
+} */
 
 html, body
 {
@@ -32,7 +32,8 @@ html, body
     margin-right: 20px;
     padding: 20px;
     color: rgb(155, 155, 155);
-    font-family: LatoBold, Arial, Helvetica, sans-serif;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 700;
     text-decoration: none;
 }
 
@@ -66,7 +67,8 @@ html, body
 
 #info-title
 {
-    font-family: LatoBold;
+    font-family: "Lato";
+    font-weight: 700;
     color: rgb(230, 230, 230);
     /* color: rgb(108, 172, 255); */
     font-size: 50px;
@@ -75,7 +77,7 @@ html, body
 
 #info-text
 {
-    font-family: Open Sans;
+    font-family: "Open Sans";
     color: rgb(199, 199, 199);
     width: 30%;
     margin: 2px 0 5px 0;
@@ -115,7 +117,7 @@ html, body
 .project-title
 {
     color: white;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 20px;
@@ -123,7 +125,7 @@ html, body
 
 .project-text
 {
-    font-family: Open Sans;
+    font-family: "Open Sans";
     color: rgb(173, 173, 173);
     width: 70%;
     margin-right: 50px;
